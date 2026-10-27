@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summit — Гори</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a class="logo" href="./">Summit</a>
+      <p>Знайди вершину для своєї наступної подорожі.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="section-heading">
+      <div>
+        <h1>Гори</h1>
+        <p>Переглядай вершини та плануй майбутні сходження.</p>
+      </div>
+      <button id="reload" type="button">Оновити</button>
+    </div>
+
+    <p id="message" role="status" aria-live="polite"></p>
+    <div id="mountains" class="mountains"></div>
+  </main>
+
+  <footer class="container">
+    <p>Summit — навчальний проєкт.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
