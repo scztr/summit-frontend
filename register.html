@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Реєстрація — Summit</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Каталог</a>
+        <a href="login.html">Вхід</a>
+    </nav>
+
+    <h1>Реєстрація</h1>
+
+    <form id="register-form">
+        <p>
+            <label for="username">Ім’я користувача</label>
+            <input id="username" name="username" maxlength="150" required>
+        </p>
+        <p>
+            <label for="first_name">Ім’я</label>
+            <input id="first_name" name="first_name" maxlength="150">
+        </p>
+        <p>
+            <label for="last_name">Прізвище</label>
+            <input id="last_name" name="last_name" maxlength="150">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" maxlength="254" required>
+        </p>
+        <p>
+            <label for="password">Пароль</label>
+            <input id="password" name="password" type="password"
+                   minlength="8" maxlength="128" required>
+        </p>
+        <p>
+            <label for="confirmation">Повторіть пароль</label>
+            <input id="confirmation" name="confirmation" type="password"
+                   minlength="8" maxlength="128" required>
+        </p>
+        <button type="submit">Зареєструватися</button>
+    </form>
+
+    <div id="message" role="status"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>
